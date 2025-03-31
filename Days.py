@@ -16,10 +16,10 @@ def language_roulet():
     return days
 
 
-def write_to_file(year, data):
+def write_to_file(year, days):
     with open(f"{year}/days", "w") as f:
-        for byte in data:
-            f.write(byte)
+        for day in days:
+            f.write(day)
     
     
 if __name__ == "__main__":
